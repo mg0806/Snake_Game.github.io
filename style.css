@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url(img/bg.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#board{
+    background: linear-gradient(rgb(6, 229, 236) , rgba(166, 223, 9, 0.179));
+    width: 90vmin;
+    height: 92vmin;
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+
+}
+/* .p{
+    color: red;
+    text-align: center;
+    
+} */
+.head{
+    background:linear-gradient(red,yellow);
+    border-radius: 8px; 
+}
+.snake{
+    background-color: orangered;
+    border: .25vmin solid white;
+    border-radius: 12px;
+
+}
+.food{
+    background-color: black;
+    border: .25vmin solid white;
+    border-radius: 8px;
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#highscoreBox{
+    position: absolute;
+    top: 53px;
+    right: 117px;
+    font-size: 39px;
+    font-weight: bold;
+}
